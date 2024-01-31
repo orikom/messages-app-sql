@@ -5,7 +5,7 @@ const messagesRouter = new express.Router();
 messagesRouter.post('/messages/new', MessagesController.newMessage);
 messagesRouter.get('/messages', MessagesController.getAllMessages);
 messagesRouter.get('/', (req, res) => {
-  res.send('hello world');
+  res.send('hello world!');
 });
 
 module.exports = messagesRouter;
