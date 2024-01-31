@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
+    "dev": "node_modules\\.bin\\env-cmd -f .\\config\\.env nodemon .\\src\\index.js"
   },
   "name": "messages-back-rds",
   "version": "1.0.0",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "dotenv": "^16.4.1",
+    "env-cmd": "^10.1.0",
     "nodemon": "^3.0.3"
   }
 }
